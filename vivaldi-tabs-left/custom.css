@@ -1,0 +1,229 @@
+.startpage {
+  background-color: var(--colorAccentBg) !important;
+}
+
+.dials .dial .thumbnail-image {
+  transition: all 150ms ease-in-out;
+}
+
+.tab.active:not(.marked):not(.tab-mini):before,
+.tab.active:not(.marked):not(.tab-mini):after,
+.startpage .startpage-content .searchfield {
+  display: none;
+}
+
+.startpage .startpage-drawer-wrapper {
+  box-shadow: 0px -10px 50px -25px rgba(0, 0, 0, 0.3) !important;
+}
+
+.startpage .startpage-navigation .startpage-navigation-group {
+  border-left: 0;
+}
+
+.startpage .startpage-navigation {
+  padding: 11px 12px;
+}
+
+.startpage .startpage-navigation button.button-startpage {
+  min-height: 0;
+  padding: 3px 10px;
+}
+
+.startpage .startpage-navigation .startpage-navigation-group:last-of-type {
+  border-width: 2px;
+  margin-left: 24px;
+  padding-left: 12px;
+}
+
+.startpage .startpage-navigation .startpage-navigation-group .button-startpage {
+  border-radius: var(--radius);
+  margin-left: 10px;
+}
+
+.startpage .button-startpage.active {
+  border: 0;
+  background: var(--colorHighlightBg);
+  color: var(--colorHighlightFg);
+}
+
+.startpage
+  .startpage-navigation
+  .startpage-navigation-group
+  .button-startpage:hover {
+  background: var(--colorHighlightBgAlpha);
+  color: var(--colorFg);
+}
+
+.startpage
+  .startpage-navigation
+  .startpage-navigation-group
+  .button-startpage:hover
+  svg {
+  fill: var(--colorFg);
+}
+
+button.button-startpage:after {
+  display: none;
+}
+
+.thumbnail-image {
+  box-shadow: 0px 10px 50px -15px rgba(0, 0, 0, 0.2) !important;
+}
+
+#switch {
+  background-color: var(--colorBg);
+}
+
+.right#panels-container.overlay .panel-group {
+  box-shadow: -20px 0 50px -14px rgb(0, 0, 0, 0.18);
+}
+
+.left#panels-container.overlay .panel-group {
+  box-shadow: 20px 0 50px -14px rgb(0, 0, 0, 0.18);
+}
+
+/*fixed panel stack style*/
+#panels-container:not(.overlay):after {
+  background-color: transparent;
+}
+
+/*
+    fix/3.3 → change .fullheight to .SlideBar--FullHeight
+*/
+.right#panels-container:not(.overlay) button.SlideBar--FullHeight.alternate {
+  min-width: 28px;
+  box-shadow: -12px 0 10px -8px rgb(0, 0, 0, 0.1);
+  left: 0;
+}
+
+.right#panels-container:not(.overlay)
+  button.SlideBar--FullHeight.alternate:active,
+.right#panels-container:not(.overlay)
+  button.SlideBar--FullHeight.alternate.touch-active {
+  left: 0;
+}
+
+.left#panels-container:not(.overlay) button.SlideBar--FullHeight {
+  min-width: 28px;
+  box-shadow: 12px 0 10px -8px rgb(0, 0, 0, 0.1);
+  right: 0;
+}
+
+.left#panels-container:not(.overlay) button.SlideBar--FullHeight:active,
+.left#panels-container:not(.overlay) button.SlideBar--FullHeight.touch-active {
+  right: 0;
+}
+/*fixed panel stack style*/
+
+#panels-container.left #switch {
+  box-shadow: inset -8px 0 20px -8px var(--colorBorder);
+}
+
+#panels-container.right #switch {
+  box-shadow: inset 8px 0 20px -8px var(--colorBorder);
+}
+
+#panels .webpanel-stack .webpanel .webpanel-header {
+  order: 2;
+  border-top: 1px solid var(--colorBgDark);
+}
+
+#panels .webpanel-stack .webpanel .webpanel-content {
+  order: 1;
+}
+
+#panels h1.webpanel-title {
+  font-size: 14px;
+}
+
+#switch button.webviewbtn img {
+  padding: 1px;
+}
+
+.theme-dark #switch button.webviewbtn img {
+  background-color: transparent;
+}
+
+/* Omnibox drop-down translucency */
+.OmniDropdown {
+  background: var(--colorBgAlpha);
+  backdrop-filter: blur(28px);
+}
+
+/* Quick command menu translucency */
+#modal-bg {
+  background-color: var(--colorBgAlpha);
+  backdrop-filter: blur(28px);
+}
+
+/*FANCY PANELS*/
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage).mac
+  #header {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage).mac
+  #header
+  #titlebar
+  #pagetitle {
+  display: none;
+}
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage).mac
+  #tabs-tabbar-container.left {
+  margin-top: 23px;
+}
+
+#browser.tabs-left.mac #tabs-subcontainer.left {
+  box-shadow: none;
+}
+
+#browser.tabs-left.mac #webview-container {
+  box-shadow: -15px 0 30px -25px rgb(0 0 0 / 40%);
+}
+
+/*address bar bigger*/
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .toolbar-mainbar {
+  height: 40px;
+}
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .toolbar-mainbar
+  > .button-toolbar
+  > button,
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .toolbar-mainbar
+  > .toolbar-group
+  > .button-toolbar
+  > button {
+  min-width: 40px;
+  height: 39px;
+  margin-top: 1px;
+}
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .UrlBar-SearchField,
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .UrlBar-AddressField {
+  height: 30px;
+}
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .toolbar
+  .profile-popup
+  + #browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .toolbar-extensions
+  .button-toolbar:not(.button-narrow):first-of-type:before {
+  top: 9px;
+}
+
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac .extension-popup {
+  box-shadow: 0 0 0 1px var(--colorBorder), 0 -15px 50px -15px rgba(0,0,0,0.2);
+}
