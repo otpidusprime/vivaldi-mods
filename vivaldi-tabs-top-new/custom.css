@@ -1,0 +1,52 @@
+/*
+*   Themes > Accent Colour from Active Page
+*   Search > Search Field Display: Disable
+*           Search in Address Field: Uncheck - Show Search Field on Speed Dial
+*/
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top {
+  background: var(--colorAccentBgDark);
+}
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top .window-buttongroup {
+  position: fixed;
+  top: -1px;
+}
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top #header {
+  position: fixed;
+  top: 28px;
+  left: 0;
+  right: 0;
+  -webkit-app-region: none;
+  border-bottom: 0;
+}
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top #tabs-container {
+  height: 32px !important;
+  padding: 0;
+  box-shadow: unset;
+  background: var(--colorAccentBgDark);
+  border-top: 1px solid var(--colorAccentBorder);
+  border-bottom: 1px solid var(--colorAccentBorder);
+}
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top .UrlBar.toolbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 78px);
+  height: 34px;
+  justify-content: flex-end;
+  padding-right: 1px;
+  background: var(--colorAccentBgDark);
+  -webkit-app-region: drag;
+}
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top .toolbar-mainbar {
+  background: var(--colorAccentBgDark);
+}
+
+#browser:not(.fullscreen):not(.is-settingspage).tabs-top #main {
+  margin-top: 68px;
+}

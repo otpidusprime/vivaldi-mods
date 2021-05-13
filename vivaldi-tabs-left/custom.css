@@ -1,9 +1,13 @@
 .startpage {
-  background-color: var(--colorAccentBg) !important;
+  background-color: var(--colorBgDarker) !important;
 }
 
 .dials .dial .thumbnail-image {
   transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
 }
 
 .tab.active:not(.marked):not(.tab-mini):before,
@@ -157,8 +161,7 @@ button.button-startpage:after {
 }
 
 /*FANCY PANELS*/
-#browser.tabs-left:not(.fullscreen):not(.is-settingspage).mac
-  #header {
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage).mac #header {
   background: transparent;
   position: fixed;
   top: 0;
@@ -224,6 +227,8 @@ button.button-startpage:after {
   top: 9px;
 }
 
-#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac .extension-popup {
-  box-shadow: 0 0 0 1px var(--colorBorder), 0 -15px 50px -15px rgba(0,0,0,0.2);
+#browser.tabs-left:not(.fullscreen):not(.is-settingspage):not(.popup).mac
+  .extension-popup {
+  box-shadow: 0 0 0 1px var(--colorBorder),
+    0 -15px 50px -15px rgba(0, 0, 0, 0.2);
 }
